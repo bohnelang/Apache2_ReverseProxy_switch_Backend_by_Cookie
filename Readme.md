@@ -84,7 +84,7 @@ RewriteEngine On
 # 
 RewriteRule ^/switch_backend$                                    /settestsyste.html      [PT,L]
 
-# OR set cooky by rewrite (not tested)
+# OR set cookie by rewrite (not tested)
 # RewriteRule   ^/switch_backend$        https://www.mycompany.test/start/ 	[R,L,CO=ummsys:INVALID:;:-1]
 # RewriteRule   ^/switch_backend/(.*)$   https://www.mycompany.test/start/ 	[R,L,CO=ummsys:$1:.mycompany.test:0:/;secure;httponly;samesite]
 ```
