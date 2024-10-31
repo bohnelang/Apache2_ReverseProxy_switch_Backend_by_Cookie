@@ -118,7 +118,7 @@ And last not least you deligate the request to the defined backend by proxy func
 
 # Redirect you path to backend 
 RewriteCond            %{REQUEST_URI}          ^/start/(.*)$                                             
-RewriteRule             ^(.*)$                 %{ENV:CMSHOST}/$1          [P,QSA,NE,L]
+RewriteRule            ^(.*)$                  %{ENV:CMSHOST}/$1          [P,QSA,NE,L]
  
 RewriteCond            %{REQUEST_URI}          ^/(([0-9]{1,6})|typo3conf|typo3temp|fileadmin|fileadmin.medma|uploads)/(.*)$
 RewriteRule            ^(.*)$                  %{ENV:CMSHOST}/$1          [P,QSA,NE,L]
@@ -129,7 +129,7 @@ RewriteRule            ^(.*)$                  %{ENV:CMSHOST}/$1          [P,QSA
 
 
 ## Result:
-1. Visit webpage http://www.mycompany.test/switch_backend and select the backend you want to use
+1. Visit webpage `http://www.mycompany.test/switch_backend` and select the backend you want to use
 2. After selecting the CMS system you will be redirected to start page
 3. All requestes are directed to selected CMS. The cookie will timeout after 1 day. 
 
