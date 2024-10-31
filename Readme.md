@@ -1,4 +1,4 @@
-# Switching proxy backend by client cookie
+# Switching reverse proxy backend by client cookie
 
 ## Introcution
 Imagine you are testing a new layout and want to demonstrate this your leading group. You want to keep it simpley and it should look like the old one. 
@@ -6,8 +6,8 @@ Maybe you URL is: `https://www.mycompany.test/start/` and Backend CMS1 and CMS2
 
 ```
              +------------+   
-             |            +--------------- CMS1 (default)
-User  >------+   Proxy    + 
+             |   Reverse  +--------------- CMS1 (default)
+User  >------+    Proxy   + 
              |            +--------------- CMS2 (test system 1)
              +------------+   
 			 
