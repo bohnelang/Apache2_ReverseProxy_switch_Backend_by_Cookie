@@ -11,7 +11,8 @@ User  >------+   Proxy    +
              |            +--------------- CMS2 (test system 1)
              +------------+   
 			 
-         https://www.mycompany.test        https://cms1.mycompany.test 
+         https://www.mycompany.test        https://cms1.mycompany.test
+                                           https://cms2.mycompany.test
 ```
 
 Now you have a presantation and want to switch by one click from the current to the new one. 
