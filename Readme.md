@@ -29,7 +29,7 @@ Now you have different ways:
 
 * **Switch by cookie**: e.g.: Cookie=1 `http://www.mycompany.test/start/` directs to CMS1 with Cookie=2 `http://www.mycompany.test/start/` directs to CMS2
 ```
-             +------------+  Cookie=1
+             +------------+  Cookie not set
              |            +--------------- CMS1 (default)
 User  >------+   Proxy    +
              |            +--------------- CMS2 (test system 1) 
