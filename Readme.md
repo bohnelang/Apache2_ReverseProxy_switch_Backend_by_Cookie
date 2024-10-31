@@ -14,6 +14,8 @@ User  >------+   Proxy    +
          https://www.mycompany.test        https://cms1.mycompany.test 
 ```
 
+Now you have a presantation and want to switch by one click from the current to the new one. 
+
 ## Material and Methods
 Now you have different ways:
 * Switch by protocol: `http://www.mycompany.test/start/` -> Problems with data from forms
