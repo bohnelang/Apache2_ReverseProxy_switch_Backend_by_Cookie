@@ -6,7 +6,7 @@ Maybe you URL is: https://www.mycompany.test/start/ and Backend CMS1 and CMS2
 
 ```
              +------------+   
-			       |            +--------------- CMS1 (default)
+             |            +--------------- CMS1 (default)
 User  >------+   Proxy    + 
              |            +--------------- CMS2 (test system 1)
              +------------+   
@@ -16,7 +16,7 @@ User  >------+   Proxy    +
 
 ## Material and Methods
 Now you have different ways:
-* Switch by protocol: http://www.mycompany.test/start/ -> Problems with data from forms
+* Switch by protocol: `http://www.mycompany.test/start/` -> Problems with data from forms
 * Switch by host: https://ww2.mycompany.test/start/ -> Maybe hard encoded URLs will crash demo
 * Switch by port: https://www.mycompany.test:8888/start/ -> Maybe hard encoded URLs will crash demo
 * Switch by path: https://www.mycompany.test/demo/start/ -> Maybe hard encoded URLs will crash demo / does not look like the original
@@ -30,12 +30,12 @@ Now you have different ways:
 * **Switch by cookie**: e.g.: Cookie=1 http://www.mycompany.test/start/ directs to CMS1 with Cookie=2 http://www.mycompany.test/start/ directs to CMS2
 ```
              +------------+  Cookie=1
-			       |            +--------------- CMS1 (default)
+             |            +--------------- CMS1 (default)
 User  >------+   Proxy    +
              |            +--------------- CMS2 (test system 1) 
              +--+---------+  Coockie=2
                 | 
-				+--- Web page for setting the Cookie OR RewriteRule to set cookie
+                +--- Web page for setting the Cookie OR RewriteRule to set cookie
 ```
 
 This examplel ueses an dedicated web page for setting the cookies. Later the Rewrite rules of the mod_rewrite in combination with proxy function can switch requests by proxy.
