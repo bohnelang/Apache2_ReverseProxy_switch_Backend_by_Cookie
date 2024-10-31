@@ -2,7 +2,7 @@
 
 ## Introcution
 Imagine you are testing a new layout and want to demonstrate this your leading group. You want to keep it simpley and it should look like the old one. 
-Maybe you URL is: https://www.mycompany.test/start/ and Backend CMS1 and CMS2
+Maybe you URL is: `https://www.mycompany.test/start/` and Backend CMS1 and CMS2
 
 ```
              +------------+   
@@ -17,17 +17,17 @@ User  >------+   Proxy    +
 ## Material and Methods
 Now you have different ways:
 * Switch by protocol: `http://www.mycompany.test/start/` -> Problems with data from forms
-* Switch by host: https://ww2.mycompany.test/start/ -> Maybe hard encoded URLs will crash demo
-* Switch by port: https://www.mycompany.test:8888/start/ -> Maybe hard encoded URLs will crash demo
-* Switch by path: https://www.mycompany.test/demo/start/ -> Maybe hard encoded URLs will crash demo / does not look like the original
-* Switch by client's IP: From IP A: http://www.mycompany.test/start/ directs to CMS1 and from IP B: http://www.mycompany.test/start/ directs to CMS2 -> Need some configuration time
+* Switch by host: `https://ww2.mycompany.test/start/` -> Maybe hard encoded URLs will crash demo
+* Switch by port: `https://www.mycompany.test:8888/start/` -> Maybe hard encoded URLs will crash demo
+* Switch by path: `https://www.mycompany.test/demo/start/` -> Maybe hard encoded URLs will crash demo / does not look like the original
+* Switch by client's IP: From IP A: `http://www.mycompany.test/start/` directs to CMS1 and from IP B: `http://www.mycompany.test/start/` directs to CMS2 -> Need some configuration time
 * Switch by user agent of the client: Needs special plug-ins
 
 [...]
 
 
 
-* **Switch by cookie**: e.g.: Cookie=1 http://www.mycompany.test/start/ directs to CMS1 with Cookie=2 http://www.mycompany.test/start/ directs to CMS2
+* **Switch by cookie**: e.g.: Cookie=1 `http://www.mycompany.test/start/` directs to CMS1 with Cookie=2 `http://www.mycompany.test/start/` directs to CMS2
 ```
              +------------+  Cookie=1
              |            +--------------- CMS1 (default)
