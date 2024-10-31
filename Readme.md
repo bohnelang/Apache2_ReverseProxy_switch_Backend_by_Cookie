@@ -23,9 +23,6 @@ Now you have different ways:
 * Switch by client's IP: From IP A: `http://www.mycompany.test/start/` directs to CMS1 and from IP B: `http://www.mycompany.test/start/` directs to CMS2 -> Need some configuration time
 * Switch by user agent of the client: Needs special plug-ins
 
-[...]
-
-
 
 * **Switch by cookie**: e.g.: Cookie=1 `http://www.mycompany.test/start/` directs to CMS1 with Cookie=2 `http://www.mycompany.test/start/` directs to CMS2
 ```
